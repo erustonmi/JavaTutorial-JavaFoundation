@@ -1,0 +1,214 @@
+Exercises for "First day with Java"
+
+The Tools
+ - Install JDK, IDE (NetBeans)
+ - Build & run "Hello world"
+
+Foundations
+ - after printing "hello world"...
+
+ - declare but do not initializae an int type variable called v
+ - try to increment the value of v
+ - now initialize the variable in its declaration
+
+ - declare and initialize two more variables, one is a 
+   String called s and the other a StringBuilder called sb
+ - initialize both with the text "Hello"
+ - print them both out
+
+ - determine if the String and String builder give true
+   when tested with ==
+ - determine if they give true when tested with .equals()
+
+ - attempt to modify both the String and the StringBuilder
+   using statements of the form:
+     s.concat(" world");
+   and 
+     sb.append(" world");
+ - print out the values of the two variables
+
+ - declare another String variable and initialize it to
+   the text "He"
+ - modify the variable using an assignment statement like:
+     s2 = concat("llo");
+ - print the value of s2
+
+ - compare the values of the first and second Strings using
+   the == operator and .equals() method
+ 
+ - Create a new class, with a main method, declare and
+   initialize a variable of type double, called farenheit
+   The basic formula is "c = 5/9 of (f - 32)"
+ - compute the equivalent farenheit temmperature and print
+   it out
+ - change the type of the celcius variable to float. What 
+   happens, and how can you fix the error
+ - change the type of the farenheit variable to float. What
+   happens and how can you fix it?
+
+ - Declare a variable that can refer to a List of CharSequence.
+ - Initialize the variable to point at an object of type
+   java.util.ArrayList
+ - Add several String objects to the List
+ - Add several StringBuilder objects to the List
+ - Extract items from the list using the get(index) method
+   and store them in variables of type CharSequence
+
+ - Declare a variable that refers to a List of Object.
+ - Initialize the variable to point at another object
+   of type java.util.ArrayList
+ - Add a String object to the List
+ - Add a StringBuilder object to the List
+ - Add a java.util.Date object to the List
+ - Extract each item from the list using the get(index)
+   method and store them in variables of type Object
+ - For each item extracted from the list, invoke the 
+   toString() method and print the result of that call
+
+Control Structures
+ - Create a class with a main method
+ - Declare and initialize a List of String objects
+
+ - Determine the length of the list, store it in a variable
+
+ - using a while loop, then again with a regular for loop
+   and a third time using an "enhanced for loop" determine
+   the longest string in the list and print it out
+
+ - Create a class with a main method
+ - The Math.random() method creates a double value greater
+   or equal to zero and less than one. Use this to generate
+   a number between 1 and 7
+ - Use a case statement to print out the name of the day of 
+   the week identified by that number.
+
+Introduction to Arrays
+ - Create a class with a main method
+ - Declare and initialize an array containing the names 
+   of the days of the week
+ - Generate a random number to represent a day of the week
+   and use it to select the name of a particular day from
+   the array. Print out the day name
+
+ - write a "regular" for loop, that is, in the form:
+   for (*initialization*; *boolean expression*; *increment)
+   such that the loop prints out the names of the days of 
+   the week in order
+
+Methods
+ - Create a class with a main method
+ - Declare and implement a static method fToC which accepts
+   a double value representing a farenheit temperature. The
+   method returns a double value representing the equivalent
+   celcius temperature
+ - In the main method, create a loop which will execute five
+   times.
+ - Each iteration of the loop should generate a random
+   number between 32 and 212, call the method, and print 
+   both the number that's input to the method and the 
+   returned value.
+
+ - Declare a method called "modify" that takes an int value
+   as an argument. In the method, double the value of the
+   argument. Declare a local variable in the main method, 
+   call the method, then print the value of the local variable
+   after the method returns.
+
+ - Declare a second method called "modify" that takes a
+   StringBuilder as an argument. In the method append the
+   word "changed" to the value of the StringBuidler. In the
+   main method declare and initialize a local variable of
+   type StringBuilder, with the value "This has". Call the
+   method and print out the value of the StringBuilder after
+   the method returns.
+
+ - Declare a third method called "modify" that takes a
+   String as an argument. In the modify method, assign
+   the argument variable to point at a new String with
+   the value "Changed". In the main method, declare a
+   local variable of type String and initialize it to the
+   value "Original". Call the method and print the value
+   of the local variable.
+
+ - Declare a fourth method called "modify" that takes two
+   Strings as arguments, and returns a String that is
+   created by concatenating the two input strings with a
+   comma between them. Call the method from the main method
+   and print out the returned value.
+
+Introduction to Exceptions
+ - Create a new class with a main method. In the class
+   define a method called mightBreak. This method takes no
+   arguments, but returns a String. In the method, create
+   a random integer between 0 and 3. If the number is zero
+   create and throw a FileNotFoundException. Ensure the 
+   method is declared so that this is permitted. If the 
+   random number is non-zero, return the text "That worked".
+   In the main method, write a for-loop that will call the
+   method 16 times. Ensure that the main method is declared
+   so that this is permitted. Run the code and observe the
+   effect. If necessary, run the code repeatedly until it
+   throws the exception.
+
+ - Append a finally block to the try structure. In the block
+   print the message "Cleaning up". Run the code again and
+   observe the changed behavior
+
+ - Modify the code that calls the mightBreak method so that
+   you can catch the exception if it arises. When this
+   happens, print out a message "Oh, that broke!". Modify
+   the main method declaration so that it does not declare
+   the FileNotFoundException any more. Run the code a few
+   more times, observing the different behavior that results
+   from the catch block.
+
+Investigating Java Libraries
+ - Create new classes and main methods as needed so that 
+   you do not lose track of your examples.
+
+ - Write code that reads two lines of text from the user
+   converts each it into a number, and prints out the result
+   of multiplying one number by the other.
+ - Modify the code so that if the numeric format is invalid
+   and the conversion fails, the user is prompted to retry
+
+ - Read a number from the user. Treating this input as the
+   radius of a circle, compute and display the area.
+
+ - Read a filename from the user. Open the file for writing
+   then read lines of text from the user until the word
+   QUIT is the sole content of the line. Each line should
+   be written to the text file. Be sure to close the file.
+
+ - Read a line of text from the user. Split the line into
+   words and print each word in turn. (Don't try to be too
+   clever when deciding what is a word and what is not. The
+   regular expression pattern \W+ matches "one or more
+   non-word characters" and should suffice for this. 
+
+ - Read a filename from the user. Open the file for reading
+   and display the contents. Prompt the user to retry if
+   the requested file does not exist.
+
+ - Create a List of Strings, and add several textual values
+   to the list (include one or two duplicates). Ask if the
+   list includes a value that you know is there, a value
+   that you know is not there, and one that has a duplicate.
+   Find the position of the first and last items for the
+   duplicated value.
+
+ - Create a Set of Strings using the HashSet implementation.
+   Initialize the Set using the contents of the List. Print
+   out the set. What do you notice.
+
+ - Create a Map (use the HashMap implementation) of Strings
+   mapped to java.time.LocalDate objects. (You can create
+   a LocalDate using the "factory" method
+     LocalDate.of(year, month, day)
+   Add several dates against keys such as "Birthday",
+   "Anniversary", "Holiday", "Go to Paris".
+   Prompt the user to enter an event name, and then look 
+   for that event in the map, printing either the date of
+   that event, or the message "that event is not in the
+   calendar".
+
