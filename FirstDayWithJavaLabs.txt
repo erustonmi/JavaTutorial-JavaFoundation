@@ -243,7 +243,7 @@ Investigating Java Libraries
 
  - Define a class RentalResources that is generic and
    internally maintains a store of objects that implement
-   both Sized and Priced interfaces.
+   both Sized and Rented interfaces.
 
  - In the RentalResources class, implement two methods,
    one called findByMaxPrice, and one called findByMinSize.
@@ -251,6 +251,8 @@ Investigating Java Libraries
    store to find all the resources that are billed at the
    specified price or lower, while the findByMinSize method
    returns all reources that have at least the specified area.
+
+----------------------
 
  - In the Test class, define a method that accepts any
    suitable List and adds two HotelRoom objects to it.
