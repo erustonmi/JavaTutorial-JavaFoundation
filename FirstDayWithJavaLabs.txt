@@ -30,7 +30,7 @@ Foundations
  - declare another String variable and initialize it to
    the text "He"
  - modify the variable using an assignment statement like:
-     s2 = concat("llo");
+     s2 = s2.concat("llo");
  - print the value of s2
 
  - compare the values of the first and second Strings using
@@ -45,6 +45,7 @@ Foundations
    happens, and how can you fix the error
  - change the type of the farenheit variable to float. What
    happens and how can you fix it?
+---------------------
 
  - Declare a variable that can refer to a List of CharSequence.
  - Initialize the variable to point at an object of type
@@ -64,6 +65,7 @@ Foundations
    method and store them in variables of type Object
  - For each item extracted from the list, invoke the 
    toString() method and print the result of that call
+-----------
 
 Control Structures
  - Create a class with a main method
@@ -211,4 +213,52 @@ Investigating Java Libraries
    for that event in the map, printing either the date of
    that event, or the message "that event is not in the
    calendar".
+
+-------------------------------------------------------
+
+ - Define an interface Sized which defines a single method
+     int getSize()
+ - Define a class Room, which implements Sized, has private
+   fields area and color. These fields must never be null,
+   and must be initialized using a constructor. Implement
+   the getSize method based on the area value. Implement a
+   getColor method that accesses the color field.
+ - Define an interface Rented which defines a single method
+     int dayRate()
+ - Define a class HotelRoom that is a subclass of Room and
+   implements the interface Rented. The HotelRoom has a
+   daily rental rate that is used to implement the Rented
+   interface method. Ensure proper initialization of all
+   fields in both the HotelRoom and the parent Room part
+   of the object.
+ - Define equals and hashCode methods for both Room and
+   HotelRoom, so that instances may be stored in a
+   HashSet<Room>. Ensure that a Room and a HotelRoom are
+   never "equals()"
+
+ - Create a Test class with a main method that stores
+   Room and HotelRoom objects in a HashSet<Room> and
+   demonstrate that equivalent objects are successfully
+   found in the set.
+
+ - Define a class RentalResources that is generic and
+   internally maintains a store of objects that implement
+   both Sized and Priced interfaces.
+
+ - In the RentalResources class, implement two methods,
+   one called findByMaxPrice, and one called findByMinSize.
+   The findByMaxPrice method searches the contents of the
+   store to find all the resources that are billed at the
+   specified price or lower, while the findByMinSize method
+   returns all reources that have at least the specified area.
+
+ - In the Test class, define a method that accepts any
+   suitable List and adds two HotelRoom objects to it.
+   Demonstrate that it works with at least one other
+   type of List.
+
+ - In the Test class, define a method that iterates over
+   any List that contains Room data, printing out the room
+   information of all the entries.
+
 
