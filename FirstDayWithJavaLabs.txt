@@ -263,4 +263,21 @@ Investigating Java Libraries
    any List that contains Room data, printing out the room
    information of all the entries.
 
+----------------------
+
+ - Define a method that receives an Iterable and a Predicate,
+   and returns a List of the items that "pass" the test
+   defined by the Predicate.
+ - Create several lists of different data types, and create
+   sub-lists from them based on several selection criteria.
+
+ - Investigate the interfaces defined in the
+   java.util.function package. Don't try to learn them,
+   but mentally categorize them and try to ensure that
+   you'll recognize them if you see them again.
+ - Investigate the methods defined for the interfaces
+   Iterable, Collection, List, Set, and Map in the package
+   java.util. Identify methods that take functional
+   interface types as arguments. Choose some interesting
+   ones and experiment with them.
 
