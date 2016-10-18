@@ -16,6 +16,7 @@ public class Store {
 		Pair<Shoe> pshoe = new Pair<>(new Shoe(9, Color.BLACK), new Shoe(9, Color.BLACK));
 		System.out.println("Pair is matched? " + pshoe.matching());
 
-		Pair<Umbrella> pu;
+		// NOT PERMITTED
+//		Pair<Umbrella> pu;
 	}
 }
